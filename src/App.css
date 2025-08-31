@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9; /* light background instead of black */
+}
+
+/* Keep your login container styles */
+.container {
+  position: relative;
+  width: 380px;
+  margin: 80px auto;   /* center using margin, not body flex */
+  padding: 30px;
+  border: 2px solid hsl(255, 77%, 55%);
+  box-shadow: 0 0 25px hsl(255, 77%, 55%);
+  border-radius: 12px;
+  background: #1b1b1b;
+  color: #fff;
+}
+
+/* rest of your form styles remain same */
+
+
+.form-box {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-box.active {
+  display: flex;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: hsl(255, 77%, 55%);
+}
+
+.input-box {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid hsl(255, 77%, 55%);
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background:hsl(255, 77%, 55%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: hsl(255, 77%, 55%);
+}
+
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.toggle-text span {
+  color: hsl(255, 77%, 55%);
+  cursor: pointer;
+  font-weight: bold;
+}
