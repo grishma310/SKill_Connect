@@ -1,0 +1,72 @@
+.calendar-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  padding: 120px 20px 50px 20px; /* space for fixed header */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-page h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.calendar-page p {
+  font-size: 1rem;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.update-btn {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.update-btn:hover {
+  background: #1e40af;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.slot-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.slot-card.booked {
+  background: #d1fae5;
+  color: #065f46;
+  cursor: not-allowed;
+}
+
+.slot-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
